@@ -1,0 +1,49 @@
+@font-face {
+    font-family: acotar;
+    src: url(fonts/NARROW.TTF) format('truetype');
+}
+
+*{
+    background-image: url(imagens/acotar.jpg);
+    background-attachment: fixed;
+    background-size: 1325px;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+#tenha {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+#pena{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#daqueles{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#quenão{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#sentemnada{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h1{
+    font-family:acotar;
+    font-size: 80px;
+}
+    
+p{
+    font-style: italic;
+    font-size: 25px;
+    color: aliceblue;
+}
