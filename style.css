@@ -12,6 +12,12 @@
     font-size: 30px;
 }
 
+#acotar {
+    color: rgb(34, 0, 0);
+    text-decoration: none;
+    font-size: 65px;
+}
+
 #tenha {
     color:rgb(255, 255, 255);
     text-decoration: none;
@@ -37,6 +43,13 @@
     text-decoration: none;
 }
 
+#voltar {
+    color: azure;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: acotar;
+}
+
 h1{
     font-family:acotar;
     font-size: 80px;
@@ -47,3 +60,4 @@ p{
     font-size: 25px;
     color: aliceblue;
 }
+
