@@ -6,10 +6,16 @@
 *{
     background-image: url(imagens/acotar.jpg);
     background-attachment: fixed;
+    background-repeat: unset;
     background-size: 1325px;
-
     text-align: center;
     font-size: 30px;
+}
+
+#footer {
+    color: antiquewhite;
+    font-size: 15px;
+
 }
 
 #acotar {
@@ -52,7 +58,6 @@
 
 h1{
     font-family:acotar;
-    font-size: 80px;
 }
     
 p{
