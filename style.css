@@ -104,7 +104,7 @@ footer {
 
     article, aside {
         flex: 100%; /* Faz com que os elementos "article" e "aside" ocupem 100% da largura em dispositivos menores */
-        height: 400px; /* Define uma altura específica para "article" e "aside" em dispositivos menores */
+        height: 620px; /* Define uma altura específica para "article" e "aside" em dispositivos menores */
     }
 
     footer {
