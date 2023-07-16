@@ -1,67 +1,114 @@
-@font-face {
-    font-family: acotar;
-    src: url(fonts/NARROW.TTF) format('truetype');
+body {
+    margin: 0px;
+    background-image: linear-gradient(to top, rgb(9, 1, 19), rgb(34, 2, 70));
 }
 
-*{
+header {
     background-image: url(imagens/acotar.jpg);
-    background-attachment: fixed;
-    background-size: 180%;
+    background-size: cover;
+    background-position: 100%;
+    padding-top: 1vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
     text-align: center;
-    font-size: 30px;
-}
-
-#footer {
-    color: antiquewhite;
-    font-size: 15px;
-
-}
-
-#acotar {
-    color: rgb(8, 2, 43);
-    text-decoration: none;
-    font-size: 65px;
-}
-
-#tenha {
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-  }
-
-#pena{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-#daqueles{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-#quenão{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-#sentemnada{
-    color: aliceblue;
-    text-decoration: none;
-}
-
-#voltar {
+    font-weight: bolder;
+    font-size: 8vh;
+    margin: 0px;
+    margin-top: 80px;
     color: azure;
+}
+
+header nav {
+    list-style: none;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav li {
+    display: inline;
+    padding-inline: 20px;
+    font-size: 1.6vh;
+}
+
+header nav li a {
     text-decoration: none;
-    font-size: 40px;
-    font-family: acotar;
+    color: azure;
+    padding: 6px;
 }
 
-h1{
-    font-family:acotar;
+header nav li > a:hover {
+    background-color: rgb(6, 13, 121);
+    border-radius: 10px;
+    color: rgb(7, 241, 241);
 }
-    
-p{
-    font-style: italic;
-    font-size: 25px;
+
+main {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to top, rgb(9, 1, 19), rgb(34, 2, 70));
+    height: 720px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+article {
+    flex: 1;
+    background-image: url(imagens/fray.jpg);
+    background-position: 50%;
+    background-size: cover;
+    height: 720px;
+    border-radius: 10px;
+}
+
+aside {
+    flex: 1;
+    background-image: url(imagens/wpa.jpg);
+    background-position: 50%;
+    background-size: cover;
+    height: 720px;
+    border-radius: 10px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, rgb(9, 1, 19), rgb(34, 2, 70));
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2vh;
+    margin: 0px;
+    padding: 2px;
+    padding-bottom: 20px;
     color: aliceblue;
+    letter-spacing: 5px;
 }
 
+/* Media Query para dispositivos com largura máxima de 768px, como tablets e celulares */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 4vh; /* Diminui o tamanho do título em dispositivos menores */
+        margin-top: 40px;
+    }
+
+    header nav li {
+        padding-inline: 10px; /* Diminui o espaçamento entre os itens do menu em dispositivos menores */
+        font-size: 1.2vh; /* Diminui o tamanho do texto do menu em dispositivos menores */
+    }
+
+    main {
+        height: auto; /* Remove a altura fixa do "main" para que ele possa ajustar-se ao conteúdo */
+        margin-bottom: 10px; /* Diminui a margem inferior do "main" em dispositivos menores */
+    }
+
+    article, aside {
+        flex: 100%; /* Faz com que os elementos "article" e "aside" ocupem 100% da largura em dispositivos menores */
+        height: 400px; /* Define uma altura específica para "article" e "aside" em dispositivos menores */
+    }
+
+    footer {
+        font-size: 1.2vh; /* Reduza ainda mais o tamanho do texto do footer em dispositivos menores */
+        padding-bottom: 10px; /* Reduz o espaçamento inferior do footer em dispositivos menores */
+    }
+}
